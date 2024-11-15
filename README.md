@@ -60,9 +60,9 @@ docker-compose up --build
 
 #### Submit Job
 Create a job to process the images collected from stores.
-URL: /api/submit/
-Method: POST
-Request Payload
+- URL: /api/submit/
+- Method: POST
+- Request Payload
 ```
 {
    "count":2,
@@ -87,25 +87,21 @@ Request Payload
 ```
 
 #### Get Job Info
-URL : /api/status?jobid=123
-URL Parameters: - jobid Job ID received while creating the job
-Method: GET
-Success Response
-Condition: If everything is OK and jobID exists.
-Code: 200 OK
+- URL : /api/status?jobid=123
+- URL Parameters: - jobid Job ID received while creating the job
+- Method: GET
 
 
 ## Development Environment
 ### Hardware/OS
 
 - MacBook Pro M1 (or your actual setup)
-- macOS Ventura 13.4 (or your OS)
 - 16GB RAM
 
 ### Tools
 
-- Visual Studio Code 1.86.0
-- Docker Desktop 4.27.0
+- Visual Studio Code 
+- Docker Desktop 
 - Go 1.21.6
 
 ### Libraries
